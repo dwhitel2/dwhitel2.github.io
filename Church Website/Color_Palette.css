@@ -10,18 +10,11 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* nav bar on top */
 nav {
     background:#5A5A5A;
-    height: 50px;
+    height: 55px;
     width: 100%;
-}
-
-label.logo {
-    color:white;
-    font-size: 30px;
-    line-height: 0px;
-    padding: 0 2px;
-    font-weight: bold;
 }
 
 nav ul{
