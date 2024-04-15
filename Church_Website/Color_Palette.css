@@ -1,0 +1,68 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    text-size-adjust: none;
+    text-decoration-style: none;
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url(../Church_Website/fonts/LEMONMILK-Regular.otf);
+}
+
+
+body{
+    font-family: 'Lemon Milk';
+    background-image: url(images/bg.png);
+
+}
+
+/* nav bar on top */
+nav {
+    background:#222020;
+    height: 55px;
+    width: 100%;
+}
+ul {
+    float: right;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+li, a{
+    font-weight: 400;
+    font-size: 14px;
+    color: #E9E9E9;  
+    /*text-transform: uppercase;*/
+    text-decoration: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 40px;
+    padding-left: 0px;
+}
+.nav_link li a {
+    border-top: 1px #E9E9E9;
+    border-bottom: 1px #E9E9E9;
+    padding: 0.5px 0;
+    transition: 0.2s ease-in-out;
+}
+.nav_link li a:hover {
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    color: white;
+    padding: 3px 0; 
+    font-size: 16px;
+   
+}
+/*Website Background*/
+
+
+
+/* New Here Page*/
+.journey{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
