@@ -8,13 +8,13 @@
 
 @font-face {
     font-family: Lemon Milk;
-    src: url(../Church_Website/fonts/LEMONMILK-Regular.otf);
+    src: url(assets/fonts/LEMONMILK-Regular.otf);
 }
 
 
 body{
     font-family: 'Lemon Milk';
-    background-image: url(images/bg.png);
+    background-image: url(../assets/images/bg.png);
 
 }
 
