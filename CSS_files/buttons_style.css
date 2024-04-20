@@ -1,0 +1,47 @@
+.page1_btn{
+    display: flex;
+    padding-left: 110px;
+
+}
+
+.p1_btn1{
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border: 2px solid #222020;
+    color:#222020;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.7s ease-in-out;
+    transition-delay: 0.7s, 1;
+}
+.p1_btn1:hover{
+    color: white;
+    box-shadow: 
+            0 0 10px grey,
+            0 0 20px grey,
+            0 0 40px grey,
+            0 0 160px grey;
+}
+
+.p1_btn1::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #222020;
+    z-index: -1;
+   /* transition: 0.5s;*/
+}
+
+.p1_btn1:hover:before{
+    width: 100%;
+}
+

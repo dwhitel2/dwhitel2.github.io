@@ -11,23 +11,29 @@
     src: url(assets/fonts/LEMONMILK-Regular.otf);
 }
 
-
 body{
     font-family: 'Lemon Milk';
     background-image: url(../assets/images/bg.png);
 
 }
 
+.logo{
+    position: fixed;
+    left: 16px;
+    top: 2px; 
+}
+
 /* nav bar on top */
 nav {
+    position: fixed;
     background:#222020;
     height: 55px;
     width: 100%;
 }
 ul {
-    float: right;
-    padding-right: 40px;
-    padding-top: 15px;
+    position: fixed;
+    right: 16px;
+    top: 16px; 
 }
 li, a{
     font-weight: 400;
@@ -38,6 +44,7 @@ li, a{
 }
 
 .nav_link li {
+    
     display: inline-block;
     padding: 0px 40px;
     padding-left: 0px;
@@ -86,6 +93,11 @@ li, a{
 .fb-post{
   position: center;
   margin-left: 25%;
+}
+
+.button{
+    position: absolute;
+    color: #222020;
 }
 
 

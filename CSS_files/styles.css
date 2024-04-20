@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    text-size-adjust: none;
+    text-decoration-style: none;
+}
+
+@font-face {
+    font-family: Lemon Milk;
+    src: url(assets/fonts/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+    font-family: Lemon Milk_Bold;
+    src: url(../assets/fonts/LEMONMILK-Bold.otf);
+}
+
+
+body{
+    font-family: 'Lemon Milk';
+    background-image: url(../assets/images/bg.png);
+
+}
+
+
+.welcome_text{
+    font-family: 'Lemon Milk_Bold';
+    font-size: 65px;
+    padding-top: 20%;
+    padding-left: 7%;
+}
+
+
+.below1{
+    padding-top: 270px;
+}
+
+.join_church{
+ position: center;
+}
+
+.time_service{
+   padding-right: 70%;
+}
+
+
+
+
