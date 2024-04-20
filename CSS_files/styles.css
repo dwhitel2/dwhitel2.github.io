@@ -44,6 +44,20 @@ body{
    padding-right: 70%;
 }
 
+.Sermon{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    padding-top: 144px;
+    padding-left: 10%;
+}
+
+.Recent_Sermon{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding-top: 144px;
+    padding-left: 10%;
+}
+
 
 
 
