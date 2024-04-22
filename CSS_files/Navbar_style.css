@@ -30,12 +30,12 @@ nav {
     height: 55px;
     width: 100%;
 }
-ul {
+ul.nav_link {
     position: fixed;
-    right: 16px;
+    right: 70px;
     top: 16px; 
 }
-li, a{
+.nav_link li, a{
     font-weight: 400;
     font-size: 14px;
     color: #E9E9E9;  
