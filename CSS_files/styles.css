@@ -1,69 +1,91 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    text-decoration: none;
-    text-size-adjust: none;
-    text-decoration-style: none;
+* {
+	padding: 0%;
+	margin: 0%;
+	text-decoration: none;
+	text-size-adjust: none;
+	text-decoration-style: none;
 }
 
 @font-face {
-    font-family: Lemon Milk;
-    src: url(assets/fonts/LEMONMILK-Regular.otf);
+	font-family: Lemon Milk;
+	src: url(assets/fonts/LEMONMILK-Regular.otf);
 }
 
 @font-face {
-    font-family: Lemon Milk_Bold;
-    src: url(../assets/fonts/LEMONMILK-Bold.otf);
+	font-family: Lemon Milk_Bold;
+	src: url(../assets/fonts/LEMONMILK-Bold.otf);
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url(../assets/fonts/Roboto-Medium.ttf);
+	font-family: Roboto;
+	src: url(../assets/fonts/Roboto-Medium.ttf);
 }
 
-body{
-    font-family: 'Lemon Milk';
+body {
+	font-family: 'Lemon Milk';
     background-image: url(../assets/images/bg.png);
+	width: 100vw;
+}
 
+section {
+	width: 100%;
+}
+
+.welcome_text {
+	font-family: 'Lemon Milk_Bold';
+	font-size: 65px;
+	padding-top: 20%;
+	padding-left: 7%;
 }
 
 
-.welcome_text{
-    font-family: 'Lemon Milk_Bold';
-    font-size: 65px;
-    padding-top: 20%;
-    padding-left: 7%;
+.below1 {
+	padding-top: 270px;
 }
 
-
-.below1{
-    padding-top: 270px;
+.join_church {
+	position: center;
 }
 
-.join_church{
- position: center;
-}
-
-.fg1{
-    padding-top: 160px;
-}
-
-.home_img1{
-    background-image: url(../assets/images/wide.jpg);
-	position: absolute;
+.sunday_time-img{
+	background-image: url(../assets/images/service.png);
 	top: 0;
 	left: 0;
-	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	color: #222020;
+	padding: 170px 0;
+	margin-top: 270px;
+}
+
+.sunday_time-img div{
+	
+	font-family: Roboto;
+	font-size: 50px;
+	font-weight: 700;
+	display: flex;
+	text-align: center;
+	margin-left: 40px;
+}
+
+
+.home_img1 {
+	 background-image: url(../assets/images/wide.jpg); 
+	top: 0;
+	left: 0;
 	height: 100%;
 	-webkit-background-size: cover;
-	background-size:cover;
-	z-index: -1;
+	background-size: cover;
 	background-position: center center;
+	padding: 70px 60px;
+	color: white;
+	text-align: center;
+
 }
 
 .home_img::after {
 	content: '';
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -74,126 +96,229 @@ body{
 
 /*watch online */
 
-.Sermon{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
-    padding-top: 144px;
-    padding-left: 10%;
+.watch-online_img{
+	background-image: url(../assets/images/sermon_thumbnails/JEZ02681.jpg);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px -5px #3d3a3a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	width: 70vw;
+	border-radius: 2px 16;
+	margin: 20px 180px;
+	padding: 50px 60px;
 }
 
-.Recent_Sermon{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    padding-top: 144px;
-    padding-left: 10%;
+.watch-online_img:hover{
+  background-image: url(../assets/images/sermon_thumbnails/0425.gif);
+}
+
+.warch-online_text{
+	position: absolute;
+	margin:0 210px; 
+}
+
+.Sermon {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 28px;
+	padding-top: 70px;
+	padding-left: 200px;
+	margin-bottom: 23px;
+}
+.Recent_Sermon {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+	padding-top: 144px;
+	padding-left: 10%;
+}
+
+/* recent Sermon scrolls */
+.sermon-row::after{
+	content: '';
+	display: table;
+	clear: both;
 }
 
 
+.recent-sermon_img{
+	float: left;
+	padding: 5px;
+	background-image: url(../assets/images/sermon_thumbnails/Screenshot\ 2024-04-25\ 111159.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px -5px #3d3a3a;
+	height: 18vh;
+	width: 15vw;
+	border-radius: 2px 16;
+	margin: 20px 5px;
+	margin-left: 140px;
+	
+}
+
+.recent-sermon_img2{
+	float: left;
+	padding: 5px;
+	background-image: url(../assets/images/sermon_thumbnails/green.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px -5px #3d3a3a;
+	height: 18vh;
+	width: 15vw;
+	border-radius: 2px 16;
+	margin: 20px 5px;
+}
+
+.recent-sermon_img3{
+	float: left;
+	padding: 5px;
+	background-image: url(../assets/images/sermon_thumbnails/black.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px -5px #3d3a3a;
+	height: 18vh;
+	width: 15vw;
+	border-radius: 2px 16;
+	margin: 20px 5px;
+}
+
+.recent-sermon_img4{
+	float: left;
+	padding: 5px;
+	background-image: url(../assets/images/sermon_thumbnails/purple.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px -5px #3d3a3a;
+	height: 18vh;
+	width: 15vw;
+	border-radius: 2px 16;
+	margin: 20px 5px;
+}
+
+.recent-sermon_img5{
+	float: left;
+	padding: 5px;
+	background-image: url(../assets/images/sermon_thumbnails/brown.png);
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px -5px #3d3a3a;
+	height: 18vh;
+	width: 15vw;
+	border-radius: 2px 16;
+	margin: 20px 5px;
+}
+
+/*------------------------------------- Watch Online---Pages----------------------------------------------------------------*/
+.Sermon_pages_style{
+	color: white;
+	background-color: #000;
+	padding: 100%;
+	font-family: Lemon Milk;
+	font-size: 28px;
+	padding-top: 70px;
+	padding-left: 200px;
+	margin-bottom: 23px;
+}
+.fb-post{
+	
+	position: center;
+	margin-left: 10%;
+}
 /* I'm New here Page */
 
-ul.TIME {
+ /* Sunday Service time */
+.Steps{
 	width: 100%;
-	display: flex;}
-.TIME li {
-	padding: 20px;
-	height: 500px;
-	background-clip: content-box;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center;
 }
 
-.step_left {
-  
-    flex-basis: 30%;
-	background-image: url(../assets/images/people.jpg);
-
-    
-}
-.step_right{
-	flex-basis: 40%;
-    padding-right: 40%;
-
-
-}
-.step_right h2 {
-    font-family: Roboto;
-    font-weight: 1200;
-	font-size: 25px;
-    color: #222020;
-    margin-bottom: 4%;
-    padding-top: 20%;
-    padding-left: 30%;
-    
+.TIME {
+	display: flex;
+	justify-content: space-between;
 }
 
-.Steps p {
-	max-width: 800px;
-	margin-bottom: 2%;
-    position: center;
-	line-height: 1;
-	padding-left: 33%;
-    
+.TIME div {
+	flex: 1;
+	display: flex;
+	width: 100%;
+	 justify-content: center; 
 }
-@media (max-width: 1000px) {
-	.step_left, .step_right {
-		flex-basis: 100%;
-	}
-	.TIME li {
-		padding: 8px;
-	}
+.TIME .Step{
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+.TIME img {
+	width: 480px;
+	height: 480px;
+	object-fit: cover;
+}
+
+.new-title_h2 {
+	font-family: Roboto;
+	font-weight: 1200;
+	font-size: 40px;
+	color: #3d3a3a;
+}
+.Step p{
+	font-family: Roboto;
+	font-weight: 1200;
+	font-size: 24px;
+	color: #3d3a3a;
 }
 /*Map*/
-ul.TIME {
+.Maps{
 	width: 100%;
-	display: flex;}
-.TIME li {
-	padding: 20px;
-	height: 500px;
-	background-clip: content-box;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center;
+	padding: 48px 0;
 }
 
-.map_left {
-    flex-basis: 30%;
-    padding-left: 70%;  
-}
-.map_right{
-    flex-basis: 40%;
-	background-image: url(../assets/images/Screenshot\ 2024-04-22\ 171801.png);
-}
-.map_left h2 {
-    font-family: Roboto;
-    font-weight: 1200;
-	font-size: 25px;
-    color: #222020;
-    margin-bottom: 4%;
-    padding-top: 40%;
-    padding-left: 30%;
-    
+.Location_disp{
+	display: flex;
+	justify-content: space-between;
 }
 
-.map p {
-	max-width: 800px;
-	margin-bottom: 7%;
-    position: center;
-	line-height: 1;
-	padding-left: 33%;
-    
-}
-@media (max-width: 1000px) {
-	.map_left, .map_right {
-		flex-basis: 100%;
-	}
-	.TIME li {
-		padding: 8px;
-	}
+.Location_disp div{
+	flex: 1;
+	display: flex;
+	width: 100%;
+	justify-content: center; 
+	
 }
 
+.Location_disp .Location_Header{
+	flex-direction:column;
+	align-items: flex-start;
+	gap: 30px;
+	 margin-left: 100px; 
 
+}
 
+.Location_disp img{
+	width: 440px;
+	height: 440px;
+	object-fit: cover; 
+	margin: 0;
+}
+
+.map_title_h2 {
+	font-family: Roboto;
+	font-weight: 1200;
+	font-size: 48px;
+	color: #3d3a3a;
+}
+
+.Location_Header p{
+	font-family: Roboto;
+	font-weight: 1200;
+	font-size: 24px;
+	color: #3d3a3a;
+}
 
 
 

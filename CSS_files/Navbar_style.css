@@ -63,8 +63,6 @@ ul.nav_link {
     font-size: 16px;
    
 }
-/*Website Background*/
-
 
 
 /* New Here Page*/
@@ -78,8 +76,23 @@ ul.nav_link {
 
 .Jesus_Title_page{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
     padding-top: 140px;
+    width: 100%;
+    
+}
+
+.Jesus_Title_page h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.Jesus_Title_page div.Jesus_Title_container{
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    gap: 24px;
 }
 
 .Para1{
@@ -87,12 +100,17 @@ ul.nav_link {
     margin-right: 340px;
 }
 
-
-/*------------------------------------- Watch Online-------------------------------------------------------------------*/
-
-.fb-post{
-  position: center;
-  margin-left: 10%;
+.Jesus_title_Header{
+    background-color: black; 
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-size: cover;
+    background-position: center;
+    text-align: center;
+	padding: 120px;
+	color: white;
+    font-size: 29px;
 }
 
 
