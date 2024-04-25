@@ -71,7 +71,7 @@ section {
 
 
 .home_img1 {
-	 background-image: url(../assets/images/wide.jpg); 
+	 background-image: white; 
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -79,7 +79,7 @@ section {
 	background-size: cover;
 	background-position: center center;
 	padding: 70px 60px;
-	color: white;
+	color: #222020zz;
 	text-align: center;
 
 }
